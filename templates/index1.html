@@ -1,0 +1,62 @@
+<!-- <!doctype html>
+<html lang="ja">
+
+<head>
+    <title>Index</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <form action="/you2" method="POST"><!-- GETを指定すると、入力情報がURLに表示される -->
+       
+        <!-- <label>ID</label>
+        <input type="str" name="search" class="input_field" required="required" placeholder="検索">
+        <label>PW</label>
+        <input type="str" name="search" class="input_field" required="required" placeholder="検索">
+        <input type="submit" value='検索'>
+        <input type="submit" value='検索'> -->
+    </form>
+</body>
+</html> -->
+
+
+{% extends "_layout.html" %}
+
+<!-- title -->
+{% block title %}
+Login - {{ super() }}
+{% endblock %}
+
+<!-- head -->
+{% block head %}
+
+{% endblock %}
+
+<!-- body -->
+{% block body %}
+<div id="container">
+
+    <h1>Login</h1>
+
+    {% if error == "1" %}
+    <span style="color: red;">The login attempt failed. Either the ID or Password is invalid.</span>
+    {% endif %}
+
+    <form action="" method="post">
+
+        <p>ID</p>
+        <input type="text" name="tatsuki_apps_id" required>
+
+        <p>Password</p>
+        <input type="password" name="tatsuki_apps_password" required>
+
+        <p></p>
+        <input type="submit" value="Login">
+
+    </form>
+
+
+</div>
+
+
+{% endblock %}

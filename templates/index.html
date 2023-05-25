@@ -1,0 +1,31 @@
+{% extends "_layout.html" %}
+
+<!-- title -->
+{% block title %}
+Login - {{ super() }}
+{% endblock %}
+
+<!-- head -->
+{% block head %}
+
+{% endblock %}
+
+<!-- body -->
+{% block body %}
+<div id="container">
+
+    <h1>index</h1>
+
+    {% if "tatsuki_apps_auth" in session %}
+    <p>ID {{ session["tatsuki_apps_id"] }}</p>
+    <a href="{{ url_for('logout') }}">Logout</a>
+
+    {% else %}
+    <a href="{{ url_for('login') }}">Login</a>
+    {% endif %}
+
+
+</div>
+
+
+{% endblock %}

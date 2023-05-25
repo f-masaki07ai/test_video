@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <title>Index</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <form action="/you3" method="POST"><!-- GETを指定すると、入力情報がURLに表示される -->
+        <label>動画を探す</label>
+        <input type="str" name="search" class="input_field" required="required" placeholder="検索">
+        <input type="submit" value='検索'>
+    </form>
+    <section id="yt-wrap_smart">
+        <div id="yt-block_smart">
+          <div class="videoWrapper_smart">
+            <p>{{titles_smart[0]}}</p>
+            <iframe id="player_smart" width="560" height="315" src="{{urls_smart[0]}}" title="YouTube video smartphone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>{{titles_smart[1]}}</p>
+            <iframe id="player_smart" width="560" height="315" src="{{urls_smart[1]}}" title="YouTube video smartphone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>{{titles_smart[2]}}</p>
+            <iframe id="player_smart" width="560" height="315" src="{{urls_smart[2]}}" title="YouTube video smartphone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>{{titles_smart[3]}}</p>
+            <iframe id="player_smart" width="560" height="315" src="{{urls_smart[3]}}" title="YouTube video smartphone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>{{titles_smart[4]}}</p>
+            <iframe id="player_smart" width="560" height="315" src="{{urls_smart[4]}}" title="YouTube video smartphone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <span id="play"></span>
+        </div>
+    </section>
+</body>
+</html>
